@@ -1,0 +1,50 @@
+﻿<Window x:Class="BasicWpfNotepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicWpfNotepad"
+        mc:Ignorable="d"
+        Title="Basic Notepad" Height="400" Width="640">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1">
+            <TextBox AcceptsReturn="True" TextWrapping="Wrap" BorderThickness="0" Padding="15" x:Name="TextArea" Background="White" Foreground="Black" ></TextBox>
+        </ScrollViewer>
+
+        <Grid Grid.Column="0" Background="Black">
+            <StackPanel Margin="10">
+                
+                <Button Margin="0,50,0,10" x:Name="NewBtn" Click="NewBtn_Click" Background="Black" Foreground="White" BorderThickness="0">New</Button>
+                <Button Margin="0,0,0,10" x:Name="OpenBtn" Click="OpenBtn_Click" Background="Black" Foreground="White" BorderThickness="0">Open</Button>
+                <Button Margin="0,0,0,10" x:Name="QuickSaveBtn" Click="QuickSaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0">Save</Button>
+                <Button Margin="0,0,0,10" x:Name="SaveBtn" Click="SaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0">Save as</Button>
+                
+                <StackPanel Orientation="Horizontal" Height="40" Margin="5,10,5,0">
+                    <Button Margin="10 0 5 0" FontSize="12" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize12" Click="frontSize12_Click">A</Button>
+                    <Button Margin="10 0 5 0" FontSize="18" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize18" Click="frontSize18_Click">A</Button>
+                    <Button Margin="10 0 5 0" FontSize="24" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize24" Click="frontSize24_Click">A</Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Grid Margin="10 0 5 0" Width="30" Height="30" x:Name="DarkmodeSwitch" MouseLeftButtonDown="DarkmodeSwitch_MouseLeftButtonDown">
+                        <Ellipse Fill="DarkGray"></Ellipse>
+                        <Grid Width="20" Height="20"   >
+                            <Ellipse Fill="Gray" x:Name="DarkmodeSwitchInside" ></Ellipse>
+                        </Grid>
+                    </Grid>
+                    <Grid Margin="5 0 5 0" Width="30" Height="30">
+                        <Ellipse Fill="DarkGray"></Ellipse>
+                        <Grid Width="20" Height="20">
+                            <Ellipse Fill="White"></Ellipse>
+                        </Grid>
+                    </Grid>
+                    
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
