@@ -120,10 +120,26 @@ namespace BasicWpfNotepad
             {
                 TextArea.Foreground = Brushes.White;
                 TextArea.Background = Brushes.Gray;
+                filename.Foreground = Brushes.White;
+                TitleBar.Background = Brushes.Gray;
+                stopButton.Background = Brushes.Gray;
+                stopButton.Foreground = Brushes.White;
+                maximumButton.Background = Brushes.Gray;
+                maximumButton.Foreground = Brushes.White;
+                minimunButton.Background = Brushes.Gray;
+                minimunButton.Foreground = Brushes.White;
             } else if (TextArea.Foreground == Brushes.White)
             {
                 TextArea.Foreground = Brushes.Black;
                 TextArea.Background = Brushes.White;
+                filename.Foreground = Brushes.Gray;
+                TitleBar.Background = Brushes.White;
+                stopButton.Background = Brushes.White;
+                stopButton.Foreground = Brushes.Gray;
+                maximumButton.Background = Brushes.White;
+                maximumButton.Foreground = Brushes.Gray;
+                minimunButton.Background = Brushes.White;
+                minimunButton.Foreground = Brushes.Gray;
             }
             if (DarkmodeSwitchInside.Fill == Brushes.Gray)
             {
