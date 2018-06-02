@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BasicWpfNotepad"
         mc:Ignorable="d"
-        Title="Basic Notepad" Height="400" Width="640" WindowStyle="None" Topmost="False">
+        Title="Basic Notepad" Height="600" Width="700" WindowStyle="None" Topmost="False">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -25,7 +25,7 @@
                 <TextBlock Margin="10,5,104,0" Foreground="Black" x:Name="filename" VerticalAlignment="Top" >Text.txt</TextBlock>    
             </Grid>
 
-            <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Black" HorizontalAlignment="Right" VerticalAlignment="Top" >
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Black" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="3" >
                 <Button Foreground="Black" Background="White" BorderThickness="0" Width="20" x:Name="minimunButton" Click="minimunButton_Click">_</Button>
                 <Button Foreground="Black" Background="White" BorderThickness="0" Width="20" x:Name="maximumButton" Click="maximumButton_Click">口</Button>
                 <Button Foreground="Black" Background="White" BorderThickness="0" Width="20" x:Name="stopButton" Click="stopButton_Click">X</Button>
@@ -41,11 +41,11 @@
             <StackPanel Margin="10">
                 
                 <Button Margin="10 50 20 5" x:Name="NewBtn" Click="NewBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">New</Button>
-                <Button Margin="10 0 20 5" x:Name="OpenBtn" Click="OpenBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Open</Button>
-                <Button Margin="10 0 0 5" x:Name="QuickSaveBtn" Click="QuickSaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Save</Button>
-                <Button Margin="10 0 0 5" x:Name="SaveBtn" Click="SaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Save as</Button>
+                <Button Margin="10 15 20 5" x:Name="OpenBtn" Click="OpenBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Open</Button>
+                <Button Margin="10 15 0 5" x:Name="QuickSaveBtn" Click="QuickSaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Save</Button>
+                <Button Margin="10 15 0 5" x:Name="SaveBtn" Click="SaveBtn_Click" Background="Black" Foreground="White" BorderThickness="0" HorizontalContentAlignment="Left">Save as</Button>
                 
-                <StackPanel Orientation="Horizontal" Height="40" Margin="0,10,5,0">
+                <StackPanel Orientation="Horizontal" Height="40" Margin="0,20,5,20">
                     <Button Margin="10 0 5 0" FontSize="12" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize12" Click="frontSize12_Click" Height="20" VerticalAlignment="Bottom">A</Button>
                     <Button Margin="10 0 5 0" FontSize="18" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize18" Click="frontSize18_Click" Height="24" VerticalAlignment="Bottom">A</Button>
                     <Button Margin="10 0 5 0" FontSize="24" Foreground="White" Background="Black" BorderThickness="0" x:Name="frontSize24" Click="frontSize24_Click" Height="30" VerticalAlignment="Bottom">A</Button>
